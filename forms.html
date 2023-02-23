@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <style>
+            body{
+                font-family: "Lucida Console", "Courier New", monospace;
+            }
+            h1,h3{
+                text-align: center;
+                text-decoration: underline;
+                font-family: "Times New Roman", Times, serif;
+                color:darkred;
+                font-weight: bold;
+                
+            }
+            form{
+                background-color:cornsilk;
+            }
+            img{
+                margin-left: 240px;
+            }
+            input[type="submit"]
+            {
+                border-radius: 10%;
+                box-sizing: border-box;
+                background-color:darkcyan;
+                color: aliceblue;
+            }
+        </style>
+    </head>
+ <body style=" margin-left:450px; margin-right:450px;"><!--  -->
+    <form action="" method="post" style="border: 5px dashed; margin:10px; padding:10px;">
+        <img src="5.png" height="100px" width="100px"><br>
+        <h1>Government Exam</h1>
+       <h3>Defense Department</h3>
+    <fieldset>
+        <legend>Introduction</legend>
+        Name:<br><input type="text" placeholder="Name:"><br><br>
+        Email:<br><input type="email" placeholder="Email:"><br><br>
+        Phone Number:<br><input type="number" placeholder="Phone Number:"><br><br>
+        Address:<br><textarea height="50" placeholder="Write your Address:"></textarea><br>
+    </fieldset> 
+    
+    <br>
+    <fieldset>
+        <legend>Upload</legend>
+    <input type="file" name="filename"><br><br>
+    <input type="submit" value="Upload">
+
+    <br><br>
+    Gender:
+    <select name="gender">
+        <option>Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Others">Others</option>
+    </select>
+        <br><br>
+    DOB:<br>
+    <input type="date" name="dob">
+</fieldset>
+    <br>
+    <fieldset>
+        <legend>Parents</legend>
+        Father's Name:<br><input type="text" placeholder="Father's Name"><br><br>
+        Mother's Name:<br><input type="text" placeholder="Mother's Name"><br><br>
+        Occupation:<br>
+        <input type="radio" name="r1">Business
+        <input type="radio" name="r1">Self employed
+        <input type="radio" name="r1">Freelancer
+        <input type="radio" name="r1">Job
+
+    </fieldset> 
+    <br>
+    <fieldset>
+        <legend>Details</legend>
+    
+    Skillset:<br>
+    <input type="checkbox" name="c1" value="HTML">HTML
+    <input type="checkbox" name="c2" value="CSS">CSS
+    <input type="checkbox" name="c3" value="PHP">PHP
+    <input type="checkbox" name="c4" value="NodeJS">NodeJS
+
+    <br><br>
+    Location:<br>
+    <input type="text" placeholder="Country" list="country">
+    <datalist id="country">
+        <option value="India">
+            <option value="">
+                <option value="Turkey"> 
+                    <option value="Israel"> 
+                        <option value="USA"> 
+                            <option value="UAE"> 
+                                <option value="France"> 
+                                    <option value="Iran"> 
+                                        <option value="UK"> 
+                                            <option value="London"> 
+                                                <option value="America"> 
+                                                    <option value="Russia"> 
+                                                        <option value="Germany">
+    </datalist>
+    <br><br><br>
+    <input type="submit" style="margin-left:240px;">
+
+</fieldset>
+    </form>
+</body>
+</html>
